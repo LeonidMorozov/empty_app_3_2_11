@@ -1,10 +1,10 @@
 # see details http://ctshryock.com/posts/2012/07/12/running-rails-with-puma-on-heroku.html
 # and http://stackoverflow.com/questions/17903689/puma-cluster-configuration-on-heroku
 environment ENV['RACK_ENV']
-threads 16,16
+threads 0,16
 
 workers 2
-#preload_app!
+preload_app!
 
 # moved to the config/initializers/database_connection.rb
 #on_worker_boot do
