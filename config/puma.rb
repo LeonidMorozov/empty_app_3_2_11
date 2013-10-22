@@ -1,7 +1,7 @@
 # see details http://ctshryock.com/posts/2012/07/12/running-rails-with-puma-on-heroku.html
 # and http://stackoverflow.com/questions/17903689/puma-cluster-configuration-on-heroku
 environment ENV['RACK_ENV']
-threads 0,16
+threads 16,16
 
 workers 2
 #preload_app!
