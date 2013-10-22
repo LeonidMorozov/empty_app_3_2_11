@@ -4,7 +4,7 @@ environment ENV['RACK_ENV']
 threads 0,16
 
 workers 2
-preload_app!
+#preload_app!
 
 # moved to the config/initializers/database_connection.rb
 #on_worker_boot do
